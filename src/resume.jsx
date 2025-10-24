@@ -1,18 +1,32 @@
 import React from 'react';
+import SplitText from './SplitText';
 
 function Resume() {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
+
   return (
     <div
       style={{
         backgroundColor: 'rgba(0,0,0,0.7)',
         padding: '40px',
         borderRadius: '15px',
-        minHeight: '100%',
+        minHeight: '100vh',
         boxSizing: 'border-box',
+        color: 'white',
+        fontFamily: 'sans-serif',
       }}
     >
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Rhea Pathak</h1>
-      <p style={{ margin: '0', marginBottom: '15px' }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '10px', textAlign: 'center' }}>
+        <SplitText
+          text="Rhea Pathak"
+          delay={100}
+          duration={0.6}
+          onLetterAnimationComplete={handleAnimationComplete}
+        />
+      </h1>
+      <p style={{ textAlign: 'center', marginBottom: '30px' }}>
         (614)-929-8629 | pathak20@purdue.edu |{' '}
         <a
           href="https://www.linkedin.com/in/rhea-pathak1/"
@@ -22,9 +36,6 @@ function Resume() {
         >
           LinkedIn
         </a>
-      </p>
-      <p style={{ marginBottom: '30px' }}>
-        Seeking a challenging and enriching summer internship and/or winter co-op in the computing field.
       </p>
 
       {/* Education */}
