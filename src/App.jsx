@@ -1,6 +1,6 @@
 import React from 'react';
 import SplashCursor from './SplashCursor';
-import Resume from './Resume';
+import Resume from './resume';
 
 function App() {
   return (
