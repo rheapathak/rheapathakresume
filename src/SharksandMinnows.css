@@ -1,0 +1,22 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #87ceeb; /* light water blue */
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  canvas {
+    border: 3px solid #000;
+    display: block;
+    margin: 20px auto;
+    background-color: #1e90ff; /* ocean blue */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .score {
+    font-size: 20px;
+    color: #fff;
+  }
+  
