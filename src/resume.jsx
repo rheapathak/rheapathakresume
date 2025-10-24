@@ -1,5 +1,6 @@
 import React from 'react';
 import SplitText from './SplitText';
+import { Link } from 'react-router-dom';
 
 function Resume() {
   const handleAnimationComplete = () => {
@@ -42,7 +43,12 @@ function Resume() {
       <section style={{ marginBottom: '30px' }}>
         <h2 style={{ borderBottom: '1px solid #FFD700', paddingBottom: '5px' }}>Education</h2>
         <p>
-          <strong>Purdue University, West Lafayette, IN</strong> — B.S. in Computer Engineering
+          <strong>
+            <Link to="/purdue-courses" style={{ color: '#FFD700', textDecoration: 'underline' }}>
+              Purdue University, West Lafayette, IN
+            </Link>
+          </strong>{' '}
+          — B.S. in Computer Engineering
           <br />
           Concentrations: AI/ML and Software Engineering
           <br />

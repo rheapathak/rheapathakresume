@@ -1,0 +1,40 @@
+.timeline-container {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #111;
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  .timeline-container h1 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #FFD700;
+  }
+  
+  .timeline-period {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-note {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  .course-list {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  
